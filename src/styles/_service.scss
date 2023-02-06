@@ -1,0 +1,109 @@
+.service {
+  text-align: center;
+  padding: 80px 0;
+  .featuers {
+    font-size: 60px;
+    color: $blue-color;
+  }
+  .feat_box {
+    margin-top: 40px;
+    img {
+      max-width: 96%;
+    }
+    .feat_details {
+      color: white;
+      padding: 30px 15px;
+      text-align: center;
+      .head {
+        font-size: 32px;
+      }
+      .desc {
+        font-style: italic;
+        color: rgb(236, 236, 236);
+        padding: 10px 0;
+      }
+      .subscribe {
+        background-color: white;
+        margin: 15px auto;
+        text-align: center;
+        width: 150px;
+        padding: 10px 0;
+        border-radius: 5px;
+        transition: 0.2s;
+        color: black;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .feat_details_LeftTop {
+      background-color: #ccd3db;
+      color: black;
+      .desc {
+        color: rgb(67, 67, 67);
+      }
+
+      .subscribe {
+        background-color: black;
+        color: white;
+      }
+    }
+    .feat_details_RightTop {
+      background-color: #858e99;
+    }
+
+    .feat_details_LeftTBottom {
+      background-color: $blue-color;
+    }
+    .feat_details_RightBottom {
+      background-color: $orange-color;
+    }
+  }
+  @media (max-width: 1350px) {
+    .feat_box {
+      .feat_details {
+        padding: 15px;
+        height: 240px;
+        img {
+          max-width: 98%;
+        }
+        .head {
+          font-size: 29px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .feat_box {
+      .feat_details {
+        height: auto;
+        .head {
+          font-size: 23px;
+        }
+        .desc {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .feat_box {
+      width: 50%;
+
+      .feat_details_RightBottom,
+      .feat_details_RightTop {
+        width: 100%;
+      }
+    }
+    .d_block_MobileView {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .feat_box {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}

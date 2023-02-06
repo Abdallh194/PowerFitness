@@ -1,0 +1,60 @@
+.Subscribe {
+  background-image: linear-gradient(45deg, #464b8c, #834496);
+  height: 100vh;
+  padding: 50px 0;
+  text-align: center;
+  .head {
+    font-size: 50px;
+    color: white;
+    padding: 15px 0;
+  }
+  .subscribe_box {
+    background-color: white;
+    width: 24%;
+    padding: 20px 4px;
+    margin: 20px auto;
+  }
+  .subType {
+    color: #c39d56;
+    font-size: 30px;
+  }
+  .price {
+    font-size: 40px;
+    padding: 20px 0;
+    font-family: "Unbounded";
+  }
+  .priceLimit {
+    margin-top: -15px;
+    font-family: "Unbounded";
+  }
+  .desc {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  .submit {
+    background-color: $orange-color;
+    width: 150px;
+    padding: 8px 0;
+    margin: 20px auto;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  @media (max-width: 992px) {
+    height: auto;
+    .subscribe_box {
+      width: 48%;
+    }
+  }
+  @media (max-width: 768px) {
+    .subscribe_box {
+      width: 100%;
+    }
+    .head {
+      font-size: 34px;
+    }
+  }
+}

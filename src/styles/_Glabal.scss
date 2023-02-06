@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap"); //header font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"); //main font
+$header-font: "Unbounded", cursive;
+$main-font: "Montserrat", sans-serif;
+* {
+  font-family: $main-font;
+  font-weight: bold;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+$orange-color: #f94d00;
+$blue-color: #465987;

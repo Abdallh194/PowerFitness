@@ -1,0 +1,62 @@
+.FoodSys {
+  position: relative;
+  padding: 40px 0;
+  .head {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 30px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    background-color: $blue-color;
+    z-index: -1;
+  }
+  .food_Box {
+    margin-top: 33px;
+  }
+  .header {
+    font-size: 28px;
+    color: $orange-color;
+    margin-top: 15px;
+    padding: 10px 0;
+  }
+  .desc {
+    color: #616161;
+  }
+  .more {
+    width: fit-content;
+    border-bottom: 1px solid #000;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  @media (max-width: 992px) {
+    &::before {
+      height: 280px;
+    }
+    .header {
+      font-size: 20px;
+    }
+    .desc {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 768px) {
+    .head {
+      font-size: 29px;
+      margin-bottom: 20px;
+    }
+    .header {
+      font-size: 37px;
+      margin-top: 0;
+    }
+    .food_Box {
+      margin-top: 0;
+      margin-bottom: 60px;
+    }
+  }
+}

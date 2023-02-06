@@ -1,0 +1,65 @@
+.ExerciseMenu {
+  padding: 60px 0;
+
+  .head {
+    font-size: 35px;
+    padding: 10px 0;
+    color: $orange-color;
+  }
+  .desc {
+    margin-top: 10px;
+    color: rgb(143, 143, 143);
+  }
+  .vid {
+    max-width: 100%;
+  }
+  .moreInfo {
+    color: black;
+    width: fit-content;
+    border-bottom: 1px solid #000;
+  }
+  @media (max-width: 992px) {
+    .head_box {
+      width: 100%;
+    }
+    .video_box,
+    .img_box {
+      width: calc(100% / 3);
+      margin: 10px auto;
+      padding: 3px;
+    }
+  }
+  @media (max-width: 768px) {
+    .head {
+      font-size: 39px;
+    }
+    .img_box {
+      width: 100%;
+      padding: 0;
+    }
+    .video_box {
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
+.Chest,
+.Thigh,
+.Shoulder {
+  background: #f3f3f39e;
+}
+
+@media (max-width: 767px) {
+  .Arm,
+  .Back {
+    .ReversBox {
+      flex-direction: column-reverse;
+    }
+    .video_box {
+      display: flex;
+    }
+    video {
+      padding: 2px;
+    }
+  }
+}

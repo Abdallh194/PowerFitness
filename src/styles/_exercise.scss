@@ -1,0 +1,64 @@
+.exercise {
+  margin: 80px 0;
+  .txt_box {
+    position: relative;
+    .content {
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: 0;
+    }
+    .head {
+      color: $blue-color;
+      font-size: 80px;
+      font-family: $header-font;
+    }
+    .desc {
+      font-size: 20px;
+      padding: 20px 0;
+      color: rgb(79, 79, 79);
+    }
+    .form-control {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-color: $blue-color;
+      border-style: dashed;
+      height: 50px;
+      font-weight: bold;
+    }
+    .submit {
+      border: none;
+      background-color: $blue-color;
+      border-radius: 0;
+      border-top-right-radius: 4px;
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  @media (max-width: 992px) {
+    .txt_box {
+      .head {
+        font-size: 46px;
+      }
+      .desc {
+        font-size: 16px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+    .revert_MobileView {
+      flex-direction: column-reverse;
+    }
+    .execise_box {
+      padding: 0;
+    }
+    .txt_box {
+      .content {
+        position: relative;
+        transform: translate(0, 0);
+      }
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.AllExercise {
+  background: url("styles/img/AllExercise_bg.jpg") center;
+  height: 800px;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.577);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-fluid {
+    width: 33%;
+  }
+  .head {
+    font-size: 90px;
+  }
+  .desc {
+    color: rgba(255, 255, 255, 0.717);
+    margin-top: -20px;
+  }
+  .Start {
+    background-color: $orange-color;
+    width: 200px;
+    border-radius: 5px;
+    margin: 15px auto;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  @media (max-width: 767px) {
+    background-position-x: 85%;
+    height: 100vh;
+  }
+}
